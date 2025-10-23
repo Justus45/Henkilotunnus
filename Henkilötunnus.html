@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Henkilötunnus</title>
+    <link rel="stylesheet" href="henkilotunnus.css">
+</head>
+<body align="center">
+    <h1>Henkilötunnuksen tarkistaminen</h1>
+    <h3>Syötä seuraavat tiedot:</h3>
+    <form method="post" action="Henkilötunnus.php">
+    Etunimi: <input type="text" name="etunimi" required> <br>
+    Sukunimi: <input type="text" name="sukunimi" required> <br>
+    Sukupuoli: <br>
+    <input type="radio" name="sukupuoli" value="Mies" required> Mies <br>
+    <input type="radio" name="sukupuoli" value="Nainen" required> Nainen <br>
+   Henkilötunnus: <input type="text" name="htunnus" required pattern="[0-9]{6}[-+A][0-9]{3}[0-9A-Y]"title="Muoto: PPKKVV-XNNN"> <br>
+   Sähköposti: <input type="email" name="sposti" required> <br>
+   Katuosoite: <input type="text" name="katuosoite" required> <br>
+   postinumero:<input type="text" minlength="5"    maxlength="5"   name="postinumero" required><br>
+   toimipaikka:  <input type="text" name="toimipaikka" required > <br>
+   
+   <input type="submit" value="OK">
+   
